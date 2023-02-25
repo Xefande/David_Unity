@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 105180815}
   - component: {fileID: 105180814}
   - component: {fileID: 105180813}
+  - component: {fileID: 105180816}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -319,6 +320,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 38.764, y: 0, z: 0}
+--- !u!114 &105180816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105180812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c35f935f896fdf438c8877e48fe4a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1869562766}
 --- !u!1 &397403797
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +676,7 @@ GameObject:
   - component: {fileID: 798499519}
   - component: {fileID: 798499518}
   - component: {fileID: 798499517}
-  - component: {fileID: 798499516}
+  - component: {fileID: 798499521}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -670,20 +684,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &798499516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798499515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69e070659fab3734fba1540d49f2c4c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  speed: 5
 --- !u!65 &798499517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -763,6 +763,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &798499521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798499515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7845b834a57327f48bb690d65081c117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5.14
+  angularSpeed: 180
+  cameraTransform: {fileID: 105180815}
 --- !u!1 &835409347
 GameObject:
   m_ObjectHideFlags: 0
